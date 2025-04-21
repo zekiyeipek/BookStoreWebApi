@@ -64,50 +64,6 @@ namespace WebApi
 
             app.UseAuthorization();
             app.UseCustomExceptionMiddle();
-            //app.Run()
-            //app.Run(async context => Console.WriteLine("Middleware 1."));
-            // app.Run(async context => Console.WriteLine("Middleware 2."));
-
-            //app.User()
-            // app.Use(async(context,next)=>{
-            //     Console.WriteLine("Middleware 1 başladı.");
-            //     await next.Invoke();
-            //     Console.WriteLine("Middleware 1 sonlandırılıyor..");
-            // });
-            // app.Use(async(context,next)=>{
-            //     Console.WriteLine("Middleware 2 başladı.");
-            //     await next.Invoke();
-            //     Console.WriteLine("Middleware 2 sonlandırılıyor..");
-            // });
-            // app.Use(async(context,next)=>{
-            //     Console.WriteLine("Middleware 3 başladı.");
-            //     await next.Invoke();
-            //     Console.WriteLine("Middleware 3 sonlandırılıyor..");
-            // });
-            
-            // app.UseBook();
-            
-            // app.Use(async(context,next)=>{
-            //     Console.WriteLine("Use Middleware tetiklendi.");
-            //     await next.Invoke();
-                
-            // });
-
-            // app.Map("/example",internalApp=>
-            // internalApp.Run(async context =>
-            // {
-            //     Console.WriteLine("/exmaple middleware tetiklendi.");
-            //     await context.Response.WriteAsync("/exmaple middleware tetiklendi.");
-            // }));
-
-            // //app.MapWhen()
-            // app.MapWhen(x=> x.Request.Method=="GET",internalApp=>{
-            //     internalApp.Run(async context => {
-            //         Console.WriteLine(" MapWhen Middleware tetiklendi.");
-            //         await context.Response.WriteAsync("MapWhen Middleware tetiklendi.");
-            //     });
-            // });
-
          
 
             app.UseEndpoints(endpoints =>
