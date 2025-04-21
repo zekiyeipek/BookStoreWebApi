@@ -42,3 +42,4 @@ C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\refin
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.pdb
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.genruntimeconfig.cache
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\ref\WebApi.dll
+C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.sourcelink.json

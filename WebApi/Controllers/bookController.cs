@@ -47,14 +47,6 @@ namespace WebApi.AddControllers
                 return Ok(result);
             }
 
-            /*[HttpGet] //GET:api/books/getquery
-            [Route("getquery")]
-            public Book Get([FromQuery] string id)
-            {
-                var book=_context.Books.Where(book=>book.Id==Convert.ToInt32(id)).SingleOrDefault();
-                return book;
-            }*/
-
             [HttpPost]// POST:api/books
             public IActionResult AddBook([FromBody] CreateBookModel newBook)
             {
@@ -83,112 +75,6 @@ namespace WebApi.AddControllers
                 command.Handle();
                 return Ok();
             }
-
-            /*[HttpGet("lastadded")] // GET: api/books/lastadded
-            public List<Book> GetBooksLast()
-            {
-                var bookListDesc = _context.Books.OrderByDescending(x=>x.Id).ToList<Book>();
-                return bookListDesc;
-            }
-            
-            [HttpGet("alphabetical")] // GET: api/books/alphabetical
-            public List<Book> GetBooksAlphabetical()
-            {
-                var bookListAlphabetical = _context.Books.OrderBy(x=>x.Title).ToList<Book>();
-                return bookListAlphabetical;
-            }
-
-            [HttpGet("newedition")] // GET: api/books/newedition
-            public List<Book> GetBooksEdition()
-            {
-                var bookListEdition = _context.Books.OrderByDescending(x=>x.PublishDate).ToList<Book>();
-                return bookListEdition;
-            }
-            [HttpGet("list")] //GET:api/books/list?genreId=id
-            public IEnumerable<Book> GetProductsByCategory(string genreId)
-            {
-                var bookList = _context.Books.OrderBy(x=>x.Id).ToList<Book>();
-                return bookList.Where(
-                p => string.Equals(p.GenreId.ToString(), genreId, StringComparison.OrdinalIgnoreCase));
-            }
-            [HttpPut]//PUT [FrmomQuery]:: api/books/updatebookquery
-            [Route("updatebookquery")]
-            public IActionResult UpdateBook([FromQuery] string  id, [FromBody] Book updatedBook)
-            {
-                var book =_context.Books.SingleOrDefault(x=> x.Id==Convert.ToInt32(id));
-                // if(book is null)
-                // {
-                //     return BadRequest();
-                // }
-                book.GenreId=updatedBook.GenreId != default ? updatedBook.GenreId : book.GenreId;
-                book.PageCount= updatedBook.PageCount != default ? updatedBook.PageCount : book.PageCount;
-                book.PublishDate= updatedBook.PublishDate != default ? updatedBook.PublishDate : book.PublishDate;
-                book.Title=updatedBook.Title != default ? updatedBook.Title : book.Title;
-                _context.SaveChanges();
-                return Ok("Book Registration Updated");
-            }
-            [HttpDelete]//DELETE [FromQuery] : api/books/deletebookquery
-            [Route("deletebookquery")]
-            public IActionResult DeleteBook([FromQuery] string  id)
-            {
-                var book=_context.Books.SingleOrDefault(x=>x.Id==Convert.ToInt32(id));
-                // if (book is null)
-                // {
-                //     return BadRequest();
-                // }
-                _context.Books.Remove(book);
-                _context.SaveChanges();
-                return Ok("Book Registration Updated");
-            }
-            [HttpPatch] // PATCH [FromQuery]: api/books/patchbookquery
-            [Route("patchbookquery")]
-            public IActionResult PatchBook([FromQuery] string id,JsonPatchDocument<Book> patchBook)
-            {
-                // if (patchBook == null)
-                // {
-                //     return BadRequest(ModelState);
-                // }
-                var book =_context.Books.SingleOrDefault(x=> x.Id==Convert.ToInt32(id));
-                // if(book is null)
-                // {
-                //     return NotFound();
-                // }
-                patchBook.ApplyTo(book,ModelState);
-                if (ModelState.IsValid)
-                {
-                    _context.SaveChanges();
-                    return Ok(book);
-                }
-                return BadRequest(ModelState);
-            }
-            // op: “add”, “remove”, “replace”, “move”, “copy” ve “test”.
-            // [
-            // {
-            // "op":"replace",
-            // "path":"/players/2/nationality",
-            // "value":"Hırvatistan"
-            // }
-            ]
-            [HttpPatch("{id}")] // PATCH [FromBody]: api/books/id
-            public IActionResult PatchBook(int id,JsonPatchDocument<Book> patchBook)
-            {
-                if (patchBook == null)
-                {
-                    return BadRequest(ModelState);
-                }
-                 var book =_context.Books.SingleOrDefault(x=> x.Id==id);
-                if(book is null)
-                {
-                    throw new InvalidOperationException("Kitap mevcut değil.");
-                }
-                patchBook.ApplyTo(book,ModelState);
-                if (ModelState.IsValid)
-                {
-                    _context.SaveChanges();
-                    return Ok(book);
-                }
-                return BadRequest(ModelState);
-            }*/
 
         }
     }
