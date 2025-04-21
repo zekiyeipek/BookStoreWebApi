@@ -28,8 +28,8 @@ namespace WebApi.AddControllers
             _mapper = mapper;
         }
 
-        [HttpGet] // GET: api/books
-            public IActionResult GetBooks()
+        [HttpGet]
+            public IActionResult GetBooks() //Get All Books
             {
                 GetBooksQuery query = new GetBooksQuery(_context,_mapper);
                 var result = query.Handle();
@@ -37,7 +37,7 @@ namespace WebApi.AddControllers
             }
 
            
-            [HttpGet("{id}")] // GET: api/books/id
+            [HttpGet("{id}")] //Get Book By Id
             public IActionResult GetBookById(int id)
             {
                 BookDetailViewModel result;
@@ -47,7 +47,7 @@ namespace WebApi.AddControllers
                 return Ok(result);
             }
 
-            [HttpPost]// POST:api/books
+            [HttpPost]// Add Books
             public IActionResult AddBook([FromBody] CreateBookModel newBook)
             {
                 CreateBookCommand command = new CreateBookCommand(_context,_mapper);
@@ -56,7 +56,7 @@ namespace WebApi.AddControllers
                 return Ok();
             }
 
-            [HttpPut("{id}")]//PUT [FromBody] : api/books/id
+            [HttpPut("{id}")]//Update Books
             public IActionResult UpdateBook(int id, [FromBody] UpdateBookModel updatedBook)
             {
                 UpdateBookCommand command = new UpdateBookCommand(_context);
@@ -67,7 +67,7 @@ namespace WebApi.AddControllers
                 
             }
 
-            [HttpDelete("{id}")]//DELETE [FromBody] :: api/books/id
+            [HttpDelete("{id}")]//Delete Books
             public IActionResult DeleteBook(int id)
             {
                 DeleteBookCommand command = new DeleteBookCommand(_context);
