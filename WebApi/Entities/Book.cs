@@ -1,4 +1,3 @@
-
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,6 +13,9 @@ namespace WebApi
         public int GenreId { get; set; }
         public int PageCount { get; set; }
         public DateTime PublishDate { get; set; }
+        public int AuthorId { get; set; }
+        public Author Author { get; set; } = null!;
         
-    }         
+    }   
+          
 }

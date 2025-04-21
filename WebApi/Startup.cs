@@ -16,7 +16,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using WebApi.DbOperations;
 using WebApi.Middlewares;
+using WebApi.Repositories;
 using WebApi.Services;
+using WebApi.Services.Abstract;
 
 namespace WebApi
 {
@@ -45,6 +47,9 @@ namespace WebApi
 
             services.AddSingleton<ILoggerService, ConsoleLogger>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IAuthorService, AuthorService>();
           
         }
 

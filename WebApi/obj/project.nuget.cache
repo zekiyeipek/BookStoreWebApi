@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "rhUlGypdwRw=",
+  "dgSpecHash": "11PzBAvTrcU=",
   "success": true,
   "projectFilePath": "C:\\Users\\zekiy\\OneDrive\\Masaüstü\\BookStoreWebApi\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zekiy\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\zekiy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\zekiy\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\zekiy\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\zekiy\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\zekiy\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.18\\microsoft.aspnetcore.jsonpatch.3.1.18.nupkg.sha512",
     "C:\\Users\\zekiy\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.18\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.18.nupkg.sha512",
     "C:\\Users\\zekiy\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
