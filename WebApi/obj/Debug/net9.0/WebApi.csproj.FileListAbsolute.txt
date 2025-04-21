@@ -8,6 +8,9 @@ C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\WebAp
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\WebApi.pdb
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
@@ -26,6 +29,7 @@ C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebAp
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.csproj.CoreCompileInputs.cache
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.sourcelink.json
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\scopedcss\bundle\WebApi.styles.css
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\staticwebassets.development.json
@@ -42,7 +46,3 @@ C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\refin
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.pdb
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.genruntimeconfig.cache
 C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\ref\WebApi.dll
-C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\obj\Debug\net9.0\WebApi.sourcelink.json
-C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\FluentValidation.dll
-C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
-C:\Users\zekiy\OneDrive\Masaüstü\BookStoreWebApi\WebApi\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
